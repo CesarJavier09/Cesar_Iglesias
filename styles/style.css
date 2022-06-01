@@ -6,7 +6,7 @@ body {
     box-sizing: border-box;
 }
 
-header{
+.flex-container{
     display: flex;
     flex-direction: column;
 
@@ -102,4 +102,135 @@ header{
 
 ::placeholder {
     color: #8298ab;
+}
+
+.tiendas{
+    max-width: 1175px;
+    margin-top: 50px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 29px;
+    align-items: center;
+    order: 1;
+
+}
+
+.tienda{
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 25px;
+}
+
+.tienda-bg{
+    width: 263px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    background-image: url("../assets/bg-tienda.png");
+}
+
+.bg-attr{
+    padding: 5px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.bg-attr#atrr-v {
+    display: flex;
+    flex-direction: column;
+}
+
+.tienda-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 261px;
+    height: 135px;
+    border: 1px solid #8298AB;
+    background-color: #ffffff;
+}
+
+ul{
+    background-color: #E1E9F0;
+    height: 41px;
+    display: inline-flex;
+    border-radius: 59px;
+    justify-content: flex-start;
+    margin: 5.5px;
+    padding: 0px 10.5px;                 
+    align-items: center;
+    font-size: 17px;
+    font-weight: 700;
+    color:#3B5266;
+    line-height: 25px;
+}
+
+.popular{
+    
+    background-color: #304659;
+    color: #E1E9F0;
+}
+
+.popular-star{
+    padding-right: 5px;
+}
+
+.bg-img img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 35px;
+}
+
+
+
+.info-titulo{
+    margin: 20px 0px 5px 0px;
+    color: #304659;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    padding-left: 20px;
+}
+
+.info-url{
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #3B5266;
+    margin: 5px 0px;
+    padding-left: 20px;
+}
+
+.info-links{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 17px;
+    font-weight: 700;
+    color: #304659;
+    
+    
+}
+
+.info-links p{
+    display: flex;
+    margin: 5px 20px 5px 20px;
+    line-height: 25px;  
+    align-items: center ;
+}
+
+.info-links img{
+    width: 6px;
+    height: 10px;
+    padding-left: 8px;
+
 }
