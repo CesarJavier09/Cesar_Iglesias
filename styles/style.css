@@ -1,0 +1,105 @@
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", serif;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.cover {
+    width: 100%;
+    height: 354.1px;
+
+    background-image: url("../assets/logos+burbjas.svg"),
+    linear-gradient(87.99deg, #006ef2 3.65%, #01aefa 121.61%);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.cover-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,
+    rgba(0, 110, 242, 0.2) 0%,
+    rgba(0, 140, 246, 1) 50%,
+    rgba(1, 174, 250, 0.2) 100%);
+}
+
+.cover-text h1 {
+    width: 750px;
+    height: 50px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 50px;
+    margin-bottom: 0;
+
+    text-align: center;
+
+    color: #ffffff;
+}
+
+.cover-text p {
+    width: 750px;
+    height: 50px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    margin-top: 30px;
+    margin-bottom: 0;
+
+    text-align: center;
+
+    color: #ffffff;
+}
+
+.cover-search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 37px;
+    width: 784px;
+    height: 50px;
+    background: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.search-bar {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar input {
+    width: 95%;
+    height: 90%;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    color: #8298ab;
+}
+
+::placeholder {
+    color: #8298ab;
+}
