@@ -164,6 +164,7 @@ body {
 .tienda-bg{
     width: 263px;
     height: 280px;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -171,9 +172,23 @@ body {
     background-image: url("../assets/bg-tienda.png");
 }
 
+.panel {
+    width: 263px;
+    min-height: 280px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+.panel:hover {
+    background: linear-gradient(180deg, rgba(48, 70, 89, 0) 0%, #304659 100%);
+}
+
 .bg-attr{
     padding: 5px;
     display: flex;
+    position: inherit;
     align-items: flex-start;
     flex-wrap: wrap;
     width: 100%;
@@ -380,6 +395,11 @@ ul{
     .tienda-bg{
         width: 150px;
         height: 160px;
+    }
+
+    .panel {
+        width: 150px;
+        min-height: 160px;
     }
 
     ul{
