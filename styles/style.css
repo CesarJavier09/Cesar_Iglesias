@@ -1,3 +1,5 @@
+/* Importando Fuente */
+
 /* latin-ext */
 @font-face {
     font-family: 'Lato';
@@ -31,6 +33,7 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
   }
 
+/*Estableciendo color de fondo y familia de fuente */
 body {
     background-color: #ffffff;
     margin: 0;
@@ -39,6 +42,7 @@ body {
     box-sizing: border-box;
 }
 
+/* Contenedor global de la página web */
 .flex-container{
     display: flex;
     flex-direction: column;
@@ -47,11 +51,13 @@ body {
     justify-content: center;
 }
 
+
 .mb-cover-img{
     display: none;
     visibility: unset;
 }
 
+/* Estilos de la parte superior (cover, barra de busqueda) */
 .cover {
     width: 100%;
     height: 354.1px;
@@ -60,8 +66,6 @@ body {
     background-repeat: round;
     background-size: 100%;
     flex: none;
-    /* order: 0;
-    flex-grow: 0; */
 }
 
 .cover-text {
@@ -107,7 +111,7 @@ body {
     color: #ffffff;
 }
 
-.cover-search {
+.busqueda {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -120,7 +124,7 @@ body {
     border-radius: 10px;
 }
 
-.search-bar {
+.input-container {
     width: 90%;
     height: 100%;
     display: flex;
@@ -128,7 +132,7 @@ body {
     align-items: center;
 }
 
-.search-bar input {
+input {
     width: 95%;
     height: 90%;
     border: none;
@@ -141,6 +145,11 @@ body {
     color: #8298ab;
 }
 
+#close-icon {
+    cursor: pointer;
+}
+
+/* Estilos de contenedor global de las tiendas */
 .tiendas{
     max-width: 1175px;
     min-width: 768px;
@@ -150,10 +159,12 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 29px;
-    align-items: center;
+    align-items:center;
     justify-content: center;
+    
 }
 
+/* Estilos de contenedor individual de las tiendas */
 .tienda{
     display: flex;
     flex-direction: column;
@@ -161,6 +172,16 @@ body {
     padding-bottom: 25px;
 }
 
+.tienda.oculto{
+    visibility: hidden;
+    display: none;
+}
+
+/* Disposición contenedor global de:
+    Imagen de la tienda
+    Tags 
+    Descripción de la tienda
+*/
 .tienda-bg{
     width: 263px;
     height: 280px;
@@ -172,20 +193,44 @@ body {
     background-image: url("../assets/bg-tienda.png");
 }
 
-.panel {
+/* Dispocición y estilos contenedor global de
+    descripción mostrada on hover
+*/
+.bg-panel {
     width: 263px;
     min-height: 280px;
     position: absolute;
+    display: flex;
+    align-items: flex-end;
     top: 0;
     left: 0;
     z-index: 9;
 }
 
-.panel:hover {
-    background: linear-gradient(180deg, rgba(48, 70, 89, 0) 0%, #304659 100%);
+.bg-panel-text {
+    width: 223px;
+    height: 248px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 16px 20px 16px 20px;
+    margin: 0;
+    opacity: 0;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 400;
 }
 
-.bg-attr{
+.bg-panel:hover   {
+    background: linear-gradient(180deg, rgba(48, 70, 89, 0) 0%, #304659 100%); 
+}
+
+.bg-panel-text:hover{
+    opacity: 1;
+}
+
+/* Disposición y estilos de contenedor de tags (Categorias)*/
+.bg-tag{
     padding: 5px;
     display: flex;
     position: inherit;
@@ -194,22 +239,16 @@ body {
     width: 100%;
 }
 
-.bg-attr#atrr-v {
+/* Regla especial cuando se desee mostrar horizontalmente
+    las categorias
+*/
+.bg-tag.v {
     display: flex;
     flex-direction: column;
 }
 
-.tienda-info{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 261px;
-    height: 135px;
-    border: 1px solid #8298AB;
-    background-color: #ffffff;
-}
-
-ul{
+/* Estilo categorias*/
+.tag{
     background-color: #E1E9F0;
     height: 41px;
     display: inline-flex;
@@ -224,8 +263,8 @@ ul{
     line-height: 25px;
 }
 
-.popular{
-    
+/* Estilo especial, categoria Popular*/
+.tag.popular{
     background-color: #304659;
     color: #E1E9F0;
 }
@@ -234,12 +273,26 @@ ul{
     padding-right: 5px;
 }
 
+/* Logo de marca */
 .bg-img img{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-bottom: 35px;
+}
+
+/* Estilo y disposición contenedor global
+    de información de la tienda
+*/
+.tienda-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 261px;
+    height: 135px;
+    border: 1px solid #8298AB;
+    background-color: #ffffff;
 }
 
 .info-titulo{
@@ -276,13 +329,14 @@ ul{
     align-items: center ;
 }
 
-.info-links img{
+.info-links .arrow {
     width: 6px;
     height: 10px;
     padding-left: 8px;
 
 }
 
+/* Estilo y disposicion contenedor opcion Ver más*/
 .ver-mas {
     display: flex;
     flex-direction: row;
@@ -293,6 +347,7 @@ ul{
     line-height: 25px;
     color: #006EF2;
     padding: 25px 0px 50px 0px;
+    cursor: pointer;
 }
 
 .ver-mas p {
@@ -305,12 +360,23 @@ ul{
     padding-left: 20px;
 }
 
+/* Animación flecha, opción Ver más */
+.rotar {
+    transform: rotate(180deg);
+    padding-right: 20px;
+}
+
+/* Reglas de estilos para pantallas mas pequeñas que 768px */
+
 @media only screen and (max-width: 768px){
+
+    /* Imagen de cover solo visible en pantallas pequeñas */
     .mb-cover-img{
         display: block;
         visibility: visible;
     }
 
+    /* Reglas para la parte superior (cover, barra de busqueda) */
     .cover {
         min-width: 320px;
         height: 725px;
@@ -355,18 +421,18 @@ ul{
         margin-right: 15px;
     }
     
-    .cover-search {
+    .busqueda {
         margin-top: 50px;
         max-width: 90%;
         position: absolute;
         top: 650px;
     }
     
-    #search-icon{
+    #busqueda-icon{
         padding-left: 10px;
     }
     
-    .search-bar input {
+    input {
         padding-left: 11.5px;
     }
     
@@ -378,6 +444,7 @@ ul{
         padding-right: 10px;
     }
     
+    /* Reglas para contenedor global de las tiendas */
     .tiendas{
         min-width: 320px;
         max-width: 600px;
@@ -387,22 +454,40 @@ ul{
     
     }
 
-    .bg-attr-overflow{
+    /* Regla se aplica cuando por la resolucion se genera
+        una tercera línea de categorías
+    */
+    .tag.overflow{
         visibility: unset;
         display: none;
     }
     
+    /* Reglas para contenedor global de:
+    Imagen de la tienda
+    Tags 
+    Descripción de la tienda
+*/
     .tienda-bg{
         width: 150px;
         height: 160px;
     }
 
-    .panel {
+    /* Reglas para contenedor global de
+    descripción mostrada on hover
+    */ 
+    .bg-panel {
         width: 150px;
         min-height: 160px;
     }
 
-    ul{
+    .bg-panel-text{
+        padding: 0px 7.25px 18px 7.25px;
+        height: 142px;
+        font-size: 10px;
+    }
+
+    /* Reglas para categorias*/
+    .tag{
         height: 24px;
         padding: 0px 5.73px;                 
         font-size: 10px;
@@ -414,25 +499,30 @@ ul{
         height: 9.17px;
     }
 
+    /* Logo de marca */
     .bg-img img{
         width: 68.79px;
         height: 45.86px;
         left: 41.27px;
         top: 79.68px;
     }
-    
+
+    /* Reglas para contenedor global
+    de información de la tienda
+    */
     .tienda-info{
         width: 148px;
         height: 62px;
         align-items: center;
     }
-    
+
     .info-titulo{
         margin: 11.46px 0px 10px 0px;
         font-size: 17px;
         line-height: 14.33px;
         padding: 0;
     }
+    
     
     .info-url{
         display: none;
@@ -446,19 +536,22 @@ ul{
         color: #8298AB;
     }
     
+    /* Cuando la tienda no tiene ofertas,
+        en pantallas pequeñas se oculta el link
+        de ofertas y se muestra solo el link de información
+    */
     .info-links.info p.link-oferta{
         display: none;
         visibility: hidde;
     }
     
+    /* Cuando la tienda tiene ofertas,
+        en pantallas pequeñas se oculta el link
+        de información y se muestra solo el link de ofertas
+    */
     .info-links.oferta p.link-info{
         display: none;
         visibility: hidde;
-    
-        @nest .link-oferta{
-            display: flex;
-            visibility: visible;
-        }
     }
     
     .info-links p{
@@ -466,12 +559,13 @@ ul{
         padding-bottom: 11.46;
     }
     
-    .info-links img{
+    .info-links .arrow{
         width: 3.44px;
         height: 5.73px;
         padding-left: 4.59px;
     }
 
+    /* Reglas para contenedor opcion Ver más */
     .ver-mas {
         margin: 0;
         padding: 0px 0px 25px 0px;

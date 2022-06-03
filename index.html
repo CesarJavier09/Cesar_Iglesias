@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./scripts/index.js"></script>
     <title>Tiendas</title>
 </head>
 <body>
@@ -14,46 +16,49 @@
                 <img class="mb-cover-img" src="./assets/movil-logos.svg" alt="" srcset="">
                 <h1>Tiendas con las que trabajamos </h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus sollicitudin consectetur pellentesque risus tellus aliquet. Ut risus volutpat enim sapien ac. Lacus in volutpat maecenas commodo ac mi.</p>
-                <div class="cover-search">
-                    <img id= "search-icon" src="./assets/search.svg" />
-                    <form class="search-bar">
-                        <input type="text" placeholder="Amazon">
+                <div class="busqueda">
+                    <img id= "busqueda-icon" src="./assets/search.svg" />
+                    <form class="input-container">
+                        <input id="busqueda" type="text" placeholder="Amazon">
                     </form>
                     <img id= "close-icon" src="./assets/close_serch.svg"/>
                 </div>
             </div>
         </div>
         <div class="tiendas">
-            <div class="tienda p1">
+            <div class="tienda">
                 <div class="tienda-bg">
-                    <div class="panel"></div>
-                    <div class="bg-attr">
-                    <ul class="popular"><img class="popular-star" src="./assets/star.svg" />Popular</ul>
-                    <ul>Tecnología</ul>
-                    <ul>Teléfonos</ul>
-                    <ul class="bg-attr-overflow">Computadoras</ul>
+                    <div class="bg-panel">
+                        <p class="bg-panel-text" >Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus sollicitudin consectetur pellentesque risus tellus aliquet. </p>
+                    </div>
+                    <div class="bg-tag">
+                        <ul class="tag popular"><img class="popular-star" src="./assets/star.svg" />Popular</ul>
+                        <ul class="tag">Tecnología</ul>
+                        <ul class="tag">Teléfonos</ul>
+                        <ul class="tag overflow">Computadoras</ul>
                     </div>
                     <div class="bg-img">
                         <img src="./assets/apple.svg">
                     </div>
-                
                 </div>
                 <div class="tienda-info">
                     <h2 class="info-titulo">Wallmart</h2>
                     <p class="info-url">wallmart.com</p>
                     <div class="info-links oferta">
-                        <p class="link-info">Ver info <img src="./assets/arrow.svg"></p>
-                        <p class="link-oferta">Ver ofetas <img src="./assets/arrow.svg"></p>
+                        <p class="link-info">Ver info <img class="arrow"src="./assets/arrow.svg"></p>
+                        <p class="link-oferta">Ver ofetas <img class="arrow"src="./assets/arrow.svg"></p>
                     </div>
                 </div>
             </div>
             <div class="tienda">
                 <div class="tienda-bg">
-                    <div class="panel"></div>
-                    <div class="bg-attr">
-                        <ul class="popular"><img class="popular-star" src="./assets/star.svg" />Popular</ul>
-                        <ul>Atlético</ul>
-                        <ul>Deporte</ul>
+                    <div class="bg-panel">
+                        <p class="bg-panel-text">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus sollicitudin consectetur pellentesque risus tellus aliquet. </p>
+                    </div>
+                    <div class="bg-tag">
+                        <ul class="tag popular"><img class="popular-star" src="./assets/star.svg" />Popular</ul>
+                        <ul class="tag">Atlético</ul>
+                        <ul class="tag">Deporte</ul>
                     </div>
                     <div class="bg-img">
                         <img src="./assets/nike.svg">
@@ -64,17 +69,19 @@
                     <h2 class="info-titulo">Nike</h2>
                     <p class="info-url">Lorem ipsum dolor sit amet.</p>
                     <div class="info-links oferta">
-                        <p class="link-info">Ver info <img src="./assets/arrow.svg"></p>
-                        <p class="link-oferta">Ver ofetas <img src="./assets/arrow.svg"></p>
+                        <p class="link-info">Ver info <img class="arrow"src="./assets/arrow.svg"></p>
+                        <p class="link-oferta">Ver ofetas <img class="arrow"src="./assets/arrow.svg"></p>
                     </div>
                 </div>
             </div>
             <div class="tienda">
                 <div class="tienda-bg">
-                    <div class="panel"></div>
-                    <div class="bg-attr">
-                        <ul class="popular"><img class="popular-star" src="./assets/star.svg" />Popular</ul>
-                        <ul>General</ul>
+                    <div class="bg-panel">
+                        <p class="bg-panel-text">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus sollicitudin consectetur pellentesque risus tellus aliquet. </p>
+                    </div>
+                    <div class="bg-tag">
+                        <ul class="tag popular"><img class="popular-star" src="./assets/star.svg" />Popular</ul>
+                        <ul class="tag">General</ul>
                     </div>
                     <div class="bg-img">
                         <img src="./assets/amazon.svg">
@@ -84,19 +91,21 @@
                     <h2 class="info-titulo">Adidas</h2>
                     <p class="info-url">Lorem ipsum dolor sit amet.</p>
                     <div class="info-links oferta">
-                        <p class="link-info">Ver info <img src="./assets/arrow.svg"></p>
-                        <p class="link-oferta">Ver ofetas <img src="./assets/arrow.svg"></p>
+                        <p class="link-info">Ver info <img class="arrow"src="./assets/arrow.svg"></p>
+                        <p class="link-oferta">Ver ofetas <img class="arrow"src="./assets/arrow.svg"></p>
                     </div>
                 </div>
             </div>
             <div class="tienda">
                 <div class="tienda-bg">
-                    <div class="panel"></div>
-                    <div class="bg-attr">
-                        <ul class="popular"><img class="popular-star" src="./assets/star.svg" />Popular</ul>
-                        <ul>Zapatillas</ul>
-                        <ul>Deporte</ul>
-                        <ul>Atlético</ul>
+                    <div class="bg-panel">
+                        <p class="bg-panel-text">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus sollicitudin consectetur pellentesque risus tellus aliquet. </p>
+                    </div>
+                    <div class="bg-tag">
+                        <ul class="tag popular"><img class="popular-star" src="./assets/star.svg" />Popular</ul>
+                        <ul class="tag">Zapatillas</ul>
+                        <ul class="tag">Deporte</ul>
+                        <ul class="tag">Atlético</ul>
                     </div>
                     <div class="bg-img">
                         <img src="./assets/adidas.svg">
@@ -106,18 +115,20 @@
                     <h2 class="info-titulo">Nike</h2>
                     <p class="info-url">Lorem ipsum dolor sit amet.</p>
                     <div class="info-links info">
-                        <p class="link-info">Ver info <img src="./assets/arrow.svg"></p>
-                        <p class="link-oferta">Ver ofetas <img src="./assets/arrow.svg"></p>
+                        <p class="link-info">Ver info <img class="arrow"src="./assets/arrow.svg"></p>
+                        <p class="link-oferta">Ver ofetas <img class="arrow"src="./assets/arrow.svg"></p>
                     </div>
                 </div>
             </div>
             <div class="tienda">
                 <div class="tienda-bg">
-                    <div class="panel"></div>
-                    <div class="bg-attr">
-                        <ul>Tecnología</ul>
-                        <ul>Teléfono</ul>
-                        <ul>Computadoras</ul>
+                    <div class="bg-panel">
+                        <p class="bg-panel-text">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus sollicitudin consectetur pellentesque risus tellus aliquet. </p>
+                    </div>
+                    <div class="bg-tag">
+                        <ul class="tag">Tecnología</ul>
+                        <ul class="tag">Teléfono</ul>
+                        <ul class="tag">Computadoras</ul>
                     </div>
                     <div class="bg-img">
                         <img src="./assets/apple.svg">
@@ -127,17 +138,19 @@
                     <h2 class="info-titulo">Apple</h2>
                     <p class="info-url">Lorem ipsum dolor sit amet.</p>
                     <div class="info-links oferta">
-                        <p class="link-info">Ver info <img src="./assets/arrow.svg"></p>
-                        <p class="link-oferta">Ver ofetas <img src="./assets/arrow.svg"></p>
+                        <p class="link-info">Ver info <img class="arrow"src="./assets/arrow.svg"></p>
+                        <p class="link-oferta">Ver ofetas <img class="arrow"src="./assets/arrow.svg"></p>
                     </div>
                 </div>
             </div>
             <div class="tienda">
                 <div class="tienda-bg">
-                    <div class="panel"></div>
-                    <div class="bg-attr" id="atrr-v">
-                        <ul>Atlético</ul>
-                        <ul>Deporte</ul>
+                    <div class="bg-panel">
+                        <p class="bg-panel-text">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus sollicitudin consectetur pellentesque risus tellus aliquet. </p>
+                    </div>
+                    <div class="bg-tag v">
+                        <ul class="tag">Atlético</ul>
+                        <ul class="tag">Deporte</ul>
                     </div>
                     <div class="bg-img">
                         <img src="./assets/nike.svg">
@@ -147,18 +160,20 @@
                     <h2 class="info-titulo">Nike</h2>
                     <p class="info-url">Lorem ipsum dolor sit amet.</p>
                     <div class="info-links info">
-                        <p class="link-info">Ver info <img src="./assets/arrow.svg"></p>
-                        <p class="link-oferta">Ver ofetas <img src="./assets/arrow.svg"></p>
+                        <p class="link-info">Ver info <img class="arrow"src="./assets/arrow.svg"></p>
+                        <p class="link-oferta">Ver ofetas <img class="arrow"src="./assets/arrow.svg"></p>
                     </div>
                 </div>
             </div>
             <div class="tienda">
                 <div class="tienda-bg">
-                    <div class="panel"></div>
-                    <div class="bg-attr">
-                        <ul>General</ul>
-                        <ul>Estilo de vida</ul>
-                        <ul>Todo</ul>
+                    <div class="bg-panel">
+                        <p class="bg-panel-text">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus sollicitudin consectetur pellentesque risus tellus aliquet. </p>
+                    </div>
+                    <div class="bg-tag">
+                        <ul class="tag">General</ul>
+                        <ul class="tag">Estilo de vida</ul>
+                        <ul class="tag">Todo</ul>
                     </div>
                     <div class="bg-img">
                         <img src="./assets/amazon.svg">
@@ -168,18 +183,20 @@
                     <h2 class="info-titulo">Amazon</h2>
                     <p class="info-url">Lorem ipsum dolor sit amet.</p>
                     <div class="info-links oferta">
-                        <p class="link-info">Ver info <img src="./assets/arrow.svg"></p>
-                        <p class="link-oferta">Ver ofetas <img src="./assets/arrow.svg"></p>
+                        <p class="link-info">Ver info <img class="arrow"src="./assets/arrow.svg"></p>
+                        <p class="link-oferta">Ver ofetas <img class="arrow"src="./assets/arrow.svg"></p>
                     </div>
                 </div>
             </div>
             <div class="tienda">
                 <div class="tienda-bg">
-                    <div class="panel"></div>
-                    <div class="bg-attr">
-                        <ul>Deporte</ul>
-                        <ul>Atlético</ul>
-                        <ul>Zapatillas</ul>
+                    <div class="bg-panel">
+                        <p class="bg-panel-text">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus sollicitudin consectetur pellentesque risus tellus aliquet. </p>
+                    </div>
+                    <div class="bg-tag">
+                        <ul class="tag">Deporte</ul>
+                        <ul class="tag">Atlético</ul>
+                        <ul class="tag">Zapatillas</ul>
                     </div>
                     <div class="bg-img">
                         <img src="./assets/adidas.svg">
@@ -189,18 +206,20 @@
                     <h2 class="info-titulo">Adidas</h2>
                     <p class="info-url">Lorem ipsum dolor sit amet.</p>
                     <div class="info-links info">
-                        <p class="link-info">Ver info <img src="./assets/arrow.svg"></p>
-                        <p class="link-oferta">Ver ofetas <img src="./assets/arrow.svg"></p>
+                        <p class="link-info">Ver info <img class="arrow"src="./assets/arrow.svg"></p>
+                        <p class="link-oferta">Ver ofetas <img class="arrow"src="./assets/arrow.svg"></p>
                     </div>
                 </div>
             </div>
             <div class="tienda">
                 <div class="tienda-bg">
-                    <div class="panel"></div>
-                    <div class="bg-attr">
-                        <ul>Tecnología</ul>
-                        <ul>Teléfono</ul>
-                        <ul>Computadoras</ul>
+                    <div class="bg-panel">
+                        <p class="bg-panel-text">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus sollicitudin consectetur pellentesque risus tellus aliquet. </p>
+                    </div>
+                    <div class="bg-tag">
+                        <ul class="tag">Tecnología</ul>
+                        <ul class="tag">Teléfono</ul>
+                        <ul class="tag">Computadoras</ul>
                     </div>
                     <div class="bg-img">
                         <img src="./assets/apple.svg">
@@ -210,18 +229,20 @@
                     <h2 class="info-titulo">Apple</h2>
                     <p class="info-url">Lorem ipsum dolor sit amet.</p>
                     <div class="info-links oferta">
-                        <p class="link-info">Ver info <img src="./assets/arrow.svg"></p>
-                        <p class="link-oferta">Ver ofetas <img src="./assets/arrow.svg"></p>
+                        <p class="link-info">Ver info <img class="arrow"src="./assets/arrow.svg"></p>
+                        <p class="link-oferta">Ver ofetas <img class="arrow"src="./assets/arrow.svg"></p>
                     </div>
                 </div>
             </div>
             <div class="tienda">
                 <div class="tienda-bg">
-                    <div class="panel"></div>
-                    <div class="bg-attr">
-                        <ul>Deporte</ul>
-                        <ul>Atlético</ul>
-                        <ul>Zapatillas</ul>
+                    <div class="bg-panel">
+                        <p class="bg-panel-text">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus sollicitudin consectetur pellentesque risus tellus aliquet. </p>
+                    </div>
+                    <div class="bg-tag">
+                        <ul class="tag">Deporte</ul>
+                        <ul class="tag">Atlético</ul>
+                        <ul class="tag">Zapatillas</ul>
                     </div>
                     <div class="bg-img">
                         <img src="./assets/nike.svg">
@@ -231,18 +252,20 @@
                     <h2 class="info-titulo">Nike</h2>
                     <p class="info-url">Lorem ipsum dolor sit amet.</p>
                     <div class="info-links oferta">
-                        <p class="link-info">Ver info <img src="./assets/arrow.svg"></p>
-                        <p class="link-oferta">Ver ofetas <img src="./assets/arrow.svg"></p>
+                        <p class="link-info">Ver info <img class="arrow"src="./assets/arrow.svg"></p>
+                        <p class="link-oferta">Ver ofetas <img class="arrow"src="./assets/arrow.svg"></p>
                     </div>
                 </div>
             </div>
             <div class="tienda">
                 <div class="tienda-bg">
-                    <div class="panel"></div>
-                    <div class="bg-attr">
-                        <ul>General</ul>
-                        <ul>Estilo de vida</ul>
-                        <ul>Todo</ul>
+                    <div class="bg-panel">
+                        <p class="bg-panel-text">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus sollicitudin consectetur pellentesque risus tellus aliquet. </p>
+                    </div>
+                    <div class="bg-tag">
+                        <ul class="tag">General</ul>
+                        <ul class="tag">Estilo de vida</ul>
+                        <ul class="tag">Todo</ul>
                     </div>
                     <div class="bg-img">
                         <img src="./assets/amazon.svg">
@@ -252,18 +275,20 @@
                     <h2 class="info-titulo">Adidas</h2>
                     <p class="info-url">Lorem ipsum dolor sit amet.</p>
                     <div class="info-links oferta">
-                        <p class="link-info">Ver info <img src="./assets/arrow.svg"></p>
-                        <p class="link-oferta">Ver ofetas <img src="./assets/arrow.svg"></p>
+                        <p class="link-info">Ver info <img class="arrow"src="./assets/arrow.svg"></p>
+                        <p class="link-oferta">Ver ofetas <img class="arrow"src="./assets/arrow.svg"></p>
                     </div>
                 </div>
             </div>
             <div class="tienda">
                 <div class="tienda-bg">
-                    <div class="panel"></div>
-                    <div class="bg-attr">
-                        <ul>Deporte</ul>
-                        <ul>Atlético</ul>
-                        <ul>Zapatillas</ul>
+                    <div class="bg-panel">
+                        <p class="bg-panel-text">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus sollicitudin consectetur pellentesque risus tellus aliquet. </p>
+                    </div>
+                    <div class="bg-tag">
+                        <ul class="tag">Deporte</ul>
+                        <ul class="tag">Atlético</ul>
+                        <ul class="tag">Zapatillas</ul>
                     </div>
                     <div class="bg-img">
                         <img src="./assets/adidas.svg">
@@ -273,8 +298,54 @@
                     <h2 class="info-titulo">Nike</h2>
                     <p class="info-url">Lorem ipsum dolor sit amet.</p>
                     <div class="info-links oferta">
-                        <p class="link-info">Ver info <img src="./assets/arrow.svg"></p>
-                        <p class="link-oferta">Ver ofetas <img src="./assets/arrow.svg"></p>
+                        <p class="link-info">Ver info <img class="arrow"src="./assets/arrow.svg"></p>
+                        <p class="link-oferta">Ver ofetas <img class="arrow"src="./assets/arrow.svg"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="tienda extra oculto">
+                <div class="tienda-bg">
+                    <div class="bg-panel">
+                        <p class="bg-panel-text">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus sollicitudin consectetur pellentesque risus tellus aliquet. </p>
+                    </div>
+                    <div class="bg-tag">
+                        <ul class="tag">General</ul>
+                        <ul class="tag">Estilo de vida</ul>
+                        <ul class="tag">Todo</ul>
+                    </div>
+                    <div class="bg-img">
+                        <img src="./assets/amazon.svg">
+                    </div>
+                </div>
+                <div class="tienda-info">
+                    <h2 class="info-titulo">Amazon</h2>
+                    <p class="info-url">Lorem ipsum dolor sit amet.</p>
+                    <div class="info-links oferta">
+                        <p class="link-info">Ver info <img class="arrow"src="./assets/arrow.svg"></p>
+                        <p class="link-oferta">Ver ofetas <img class="arrow"src="./assets/arrow.svg"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="tienda extra oculto">
+                <div class="tienda-bg">
+                    <div class="bg-panel">
+                        <p class="bg-panel-text">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus sollicitudin consectetur pellentesque risus tellus aliquet. </p>
+                    </div>
+                    <div class="bg-tag">
+                        <ul class="tag">Deporte</ul>
+                        <ul class="tag">Atlético</ul>
+                        <ul class="tag">Zapatillas</ul>
+                    </div>
+                    <div class="bg-img">
+                        <img src="./assets/adidas.svg">
+                    </div>
+                </div>
+                <div class="tienda-info">
+                    <h2 class="info-titulo">Adidas</h2>
+                    <p class="info-url">Lorem ipsum dolor sit amet.</p>
+                    <div class="info-links info">
+                        <p class="link-info">Ver info <img class="arrow"src="./assets/arrow.svg"></p>
+                        <p class="link-oferta">Ver ofetas <img class="arrow"src="./assets/arrow.svg"></p>
                     </div>
                 </div>
             </div>
